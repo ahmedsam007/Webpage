@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Sam - Portfolio</title>
+    <link rel="icon" type="image/png" href="images/dark.png">
+    <link rel="apple-touch-icon" href="images/white.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#10a37f',
+                            600: '#0a8f6f',
+                            700: '#0a7f64',
+                        },
+                        dark: {
+                            800: '#1e1e1e',
+                            900: '#0f0f0f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+        // Check for saved theme preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+    <style>
+        /* Custom cursor styles */
+        * {
+            cursor: none;
+        }
+
+        .custom-cursor {
+            width: 12px;
+            height: 12px;
+            background: transparent;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transition: all 0.1s ease;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .custom-cursor::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #00ffff, #0000ff, #8000ff) border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+            animation: rotate 4s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        a:hover ~ .custom-cursor,
+        button:hover ~ .custom-cursor {
+            transform: translate(-50%, -50%) scale(1.5);
+            border-color: #fff;
+        }
+
+        .button-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .morph-button {
+            transition: all 0.3s ease;
+            transform: scale(1);
+        }
+
+        .morph-button:active {
+            transform: scale(0.95);
+        }
+
+        .morph-button.clicked {
+            background: #10a37f;
+        }
+
+        .button-text {
+            display: inline-block;
+            transition: opacity 0.3s ease;
+        }
+
+        .checkmark {
+            display: none;
+            color: white;
+        }
+
+        .morph-button.clicked .button-text {
+            display: none;
+        }
+
+        .morph-button.clicked .checkmark {
+            display: inline-block;
+        }
+
+        /* OpenAI-style transitions */
+        * {
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        /* Modern glowing text effect */
+        .glow-text {
+            position: relative;
+            z-index: 1;
+            letter-spacing: 2px;
+            display: inline-block;
+        }
+
+        .glow-text::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: blur(25px);
+            background: linear-gradient(90deg, #00f0ff, #ff00ff, #ffff00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glow 4s linear infinite, move 8s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0% { filter: blur(15px) brightness(1); }
+            50% { filter: blur(30px) brightness(2); }
+            100% { filter: blur(15px) brightness(1); }
+        }
+
+        @keyframes move {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(10px, -10px); }
+            50% { transform: translate(-10px, 10px); }
+            75% { transform: translate(-10px, -10px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        /* OpenAI-style card hover effect */
+        .hover-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="font-sans bg-white dark:bg-dark-900 antialiased">
+    <!-- Custom cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 dark:bg-dark-800/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center">
+                        <img src="images/logo-light.png" alt="Ahmed Sam" class="h-10 w-auto transition-all duration-300 dark:hidden">
+                        <img src="images/logo-dark.png" alt="Ahmed Sam" class="h-10 w-auto transition-all duration-300 hidden dark:block">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-500 font-medium">Home</a>
+                    <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-500 font-medium">Features</a>
+                    <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-500 font-medium">Portfolio</a>
+                    <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-500 font-medium">Contact</a>
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-dark-800 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-dark-900">
+                        <i class="fas fa-sun dark:hidden"></i>
+                        <i class="fas fa-moon hidden dark:block"></i>
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center space-x-4">
+                    <button id="theme-toggle-mobile" class="p-2 rounded-lg bg-gray-100 dark:bg-dark-800 text-gray-800 dark:text-gray-200">
+                        <i class="fas fa-sun dark:hidden"></i>
+                        <i class="fas fa-moon hidden dark:block"></i>
+                    </button>
+                    <button class="text-gray-600 dark:text-gray-300">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-white to-gray-50 dark:from-dark-900 dark:to-dark-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center max-w-4xl mx-auto text-center">
+                <h1 class="text-6xl md:text-7xl lg:text-8xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
+                    <span class="glow-text" data-text="Crafting Digital">Crafting Digital</span> <span class="glow-text" data-text="Experiences">Experiences</span>
+                </h1>
+                <p class="text-2xl text-gray-600 dark:text-gray-300 mb-12 leading-relaxed">
+                    UI/UX designer specializing in creating intuitive and engaging digital experiences that bring your vision to life.
+                </p>
+                <div class="button-container">
+                    <a href="https://wa.me/+1234567890" target="_blank" class="morph-button bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#22c55e] hover:to-[#0f7a6f] text-white px-8 py-4 rounded-lg text-lg font-medium transition duration-300 flex items-center">
+                        <i class="fab fa-whatsapp mr-2 text-xl"></i>
+                        <span class="button-text">Chat on WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="py-24 bg-white dark:bg-dark-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">My Story</h2>
+            <p class="text-xl text-center text-gray-600 dark:text-gray-300 mb-16 max-w-3xl mx-auto">
+                From Gaza to the world: A journey of passion, resilience, and creative innovation.
+            </p>
+            
+            <div class="max-w-4xl mx-auto">
+                <!-- Story Content -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+                    <div class="order-2 md:order-1">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">The Beginning</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                            Born and raised in Gaza, I discovered my passion for design at an early age. Despite the challenges, I found solace in creating digital experiences that could transcend physical boundaries.
+                        </p>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            My journey began with simple sketches and evolved into a deep understanding of user-centered design principles.
+                        </p>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <div class="relative">
+                            <div class="absolute inset-0 bg-primary-500/10 rounded-2xl transform rotate-3"></div>
+                            <img src="images/mysorty.png" alt="My Story" class="rounded-2xl shadow-xl relative z-10 w-full h-[545px] object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <div class="space-y-12">
+                    <!-- Timeline Item 1 -->
+                    <div class="relative pl-8 border-l-2 border-primary-500">
+                        <div class="absolute left-[-9px] top-0 w-4 h-4 bg-primary-500 rounded-full"></div>
+                        <div class="mb-2">
+                            <span class="text-primary-500 font-semibold">2018</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">First UI Project</h4>
+                        <p class="text-gray-600 dark:text-gray-300">Launched my first mobile app design, reaching 10,000+ users.</p>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="relative pl-8 border-l-2 border-primary-500">
+                        <div class="absolute left-[-9px] top-0 w-4 h-4 bg-primary-500 rounded-full"></div>
+                        <div class="mb-2">
+                            <span class="text-primary-500 font-semibold">2020</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Joined UNICC</h4>
+                        <p class="text-gray-600 dark:text-gray-300">Started as a Senior UI/UX Designer at the United Nations International Computing Centre, contributing to global digital solutions.</p>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="relative pl-8 border-l-2 border-primary-500">
+                        <div class="absolute left-[-9px] top-0 w-4 h-4 bg-primary-500 rounded-full"></div>
+                        <div class="mb-2">
+                            <span class="text-primary-500 font-semibold">2023</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Global Impact</h4>
+                        <p class="text-gray-600 dark:text-gray-300">Collaborated with international teams on projects reaching millions of users.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toolkit Section -->
+    <section class="py-24 bg-gray-50 dark:bg-dark-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">Design Toolkit</h2>
+            <p class="text-xl text-center text-gray-600 dark:text-gray-300 mb-16 max-w-3xl mx-auto">
+                Leveraging cutting-edge AI platforms and industry-standard design tools to create exceptional digital experiences.
+            </p>
+            
+            <div class="max-w-6xl mx-auto">
+                <!-- AI Tools Grid -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">AI-Powered Design Tools</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        <!-- Midjourney -->
+                        <div class="hover-card p-6 bg-white dark:bg-dark-900 rounded-xl text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png" alt="Midjourney" class="h-12 w-12 mx-auto mb-4">
+                            <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Midjourney</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">AI image generation for design inspiration</p>
+                        </div>
+                        
+                        <!-- ChatGPT -->
+                        <div class="hover-card p-6 bg-white dark:bg-dark-900 rounded-xl text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT" class="h-12 w-12 mx-auto mb-4">
+                            <h4 class="font-semibold text-gray-900 dark:text-white mb-2">ChatGPT</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">AI-powered content and copywriting</p>
+                        </div>
+                        
+                        <!-- Cursor -->
+                        <div class="hover-card p-6 bg-white dark:bg-dark-900 rounded-xl text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Cursor" class="h-12 w-12 mx-auto mb-4">
+                            <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Cursor</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">AI-powered code editor</p>
+                        </div>
+                        
+                        <!-- Figma AI -->
+                        <div class="hover-card p-6 bg-white dark:bg-dark-900 rounded-xl text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma AI" class="h-12 w-12 mx-auto mb-4">
+                            <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Figma AI</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">AI-powered design assistance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Tools Grid -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">Design & Prototyping Tools</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        <!-- Figma -->
+                        <div class="hover-card p-6 bg-white dark:bg-dark-900 rounded-xl text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="h-12 w-12 mx-auto mb-4">
+                            <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Figma</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Collaborative interface design</p>
+                        </div>
+                        
+                        <!-- Adobe XD -->
+                        <div class="hover-card p-6 bg-white dark:bg-dark-900 rounded-xl text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg" alt="Adobe XD" class="h-12 w-12 mx-auto mb-4">
+                            <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Adobe XD</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">UX/UI design and prototyping</p>
+                        </div>
+                        
+                        <!-- Sketch -->
+                        <div class="hover-card p-6 bg-white dark:bg-dark-900 rounded-xl text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Sketch_Logo.svg" alt="Sketch" class="h-12 w-12 mx-auto mb-4">
+                            <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Sketch</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Digital design for Mac</p>
+                        </div>
+                        
+                        <!-- Framer -->
+                        <div class="hover-card p-6 bg-white dark:bg-dark-900 rounded-xl text-center">
+                            <img src="https://framer.com/favicon.ico" alt="Framer" class="h-12 w-12 mx-auto mb-4">
+                            <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Framer</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Interactive prototyping and design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-24 bg-gray-50 dark:bg-dark-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">Portfolio</h2>
+            <p class="text-xl text-center text-gray-600 dark:text-gray-300 mb-16 max-w-3xl mx-auto">
+                Showcasing a collection of innovative UI/UX design projects that push boundaries.
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Portfolio Item 1 -->
+                <div class="group hover-card overflow-hidden rounded-2xl">
+                    <img src="images/1.webp" alt="UI/UX Design Project 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <h3 class="text-white text-xl font-bold mb-2">Project Title 1</h3>
+                        <p class="text-gray-200 text-sm mb-4">UI/UX Design • Mobile App</p>
+                        <a href="#" class="inline-flex items-center text-primary-500 hover:text-primary-400 transition-colors font-medium">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="group hover-card overflow-hidden rounded-2xl">
+                    <img src="images/2.webp" alt="UI/UX Design Project 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <h3 class="text-white text-xl font-bold mb-2">Project Title 2</h3>
+                        <p class="text-gray-200 text-sm mb-4">UI/UX Design • Web App</p>
+                        <a href="#" class="inline-flex items-center text-primary-500 hover:text-primary-400 transition-colors font-medium">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="group hover-card overflow-hidden rounded-2xl">
+                    <img src="images/3.webp" alt="UI/UX Design Project 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <h3 class="text-white text-xl font-bold mb-2">Project Title 3</h3>
+                        <p class="text-gray-200 text-sm mb-4">UI/UX Design • Dashboard</p>
+                        <a href="#" class="inline-flex items-center text-primary-500 hover:text-primary-400 transition-colors font-medium">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="group hover-card overflow-hidden rounded-2xl">
+                    <img src="images/4.webp" alt="UI/UX Design Project 4" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <h3 class="text-white text-xl font-bold mb-2">Project Title 4</h3>
+                        <p class="text-gray-200 text-sm mb-4">UI/UX Design • E-commerce</p>
+                        <a href="#" class="inline-flex items-center text-primary-500 hover:text-primary-400 transition-colors font-medium">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="group hover-card overflow-hidden rounded-2xl">
+                    <img src="images/5.webp" alt="UI/UX Design Project 5" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <h3 class="text-white text-xl font-bold mb-2">Project Title 5</h3>
+                        <p class="text-gray-200 text-sm mb-4">UI/UX Design • Branding</p>
+                        <a href="#" class="inline-flex items-center text-primary-500 hover:text-primary-400 transition-colors font-medium">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 (Empty for grid balance) -->
+                <div class="hidden lg:block group hover-card overflow-hidden rounded-2xl bg-gray-100 dark:bg-dark-800">
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <a href="#" class="inline-flex items-center px-8 py-4 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition duration-300 font-medium">
+                    View All Projects <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 dark:bg-dark-800 py-12 border-t border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto">
+                <div class="mb-8 md:mb-0">
+                    <p class="text-gray-600 dark:text-gray-400">&copy; 2025 Ahmed Sam. Made with ❤️ in Gaza</p>
+                </div>
+                <div class="flex space-x-8">
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-500 transition duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-500 transition duration-300">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-500 transition duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-500 transition duration-300">
+                        <i class="fab fa-dribbble text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Custom cursor movement
+        const cursor = document.querySelector('.custom-cursor');
+        
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX - 10 + 'px';
+            cursor.style.top = e.clientY - 10 + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.style.transform = 'scale(0.8)';
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.style.transform = 'scale(1)';
+        });
+
+        // Theme toggle functionality
+        function toggleTheme() {
+            const html = document.documentElement;
+            const isDark = html.classList.contains('dark');
+            
+            if (isDark) {
+                html.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                html.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        }
+
+        // Add click handlers for theme toggle buttons
+        document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+        document.getElementById('theme-toggle-mobile').addEventListener('click', toggleTheme);
+
+        const button = document.querySelector('.morph-button');
+
+        button.addEventListener('click', function(e) {
+            if (this.classList.contains('clicked')) return;
+            
+            this.classList.add('clicked');
+            
+            // Play confetti
+            const buttonRect = this.getBoundingClientRect();
+            const buttonCenterX = (buttonRect.left + buttonRect.right) / 2 / window.innerWidth;
+            const buttonCenterY = (buttonRect.top + buttonRect.bottom) / 2 / window.innerHeight;
+
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { 
+                    x: buttonCenterX,
+                    y: buttonCenterY
+                },
+                angle: 90,
+                startVelocity: 45,
+                gravity: 1.2,
+                ticks: 200,
+                colors: ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff']
+            });
+        });
+    </script>
+</body>
+</html> 
