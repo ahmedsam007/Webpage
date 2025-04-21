@@ -1,0 +1,1607 @@
+<!doctype html>
+<html
+  lang="en"
+  class="no-js"
+  data-controller="scrollable "
+  data-action="click->scrollable#navigate DOMContentLoaded@window->scrollable#goToHash hashchange@window->scrollable#goToHash"
+>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    >
+    <meta
+      name="theme-color"
+      content="#212123"
+      media="(prefers-color-scheme: dark)"
+    >
+    
+    <!-- Title -->
+
+
+  <title>Page not found · Sketch</title>
+
+
+<meta property='og:title' content='Page not found'>
+<meta name='twitter:title' content='Page not found'>
+
+<!-- Description -->
+  <!-- prettier-ignore -->
+  <meta name='description' content="Sorry, we couldn’t find the page you’re looking for.">
+  <!-- prettier-ignore -->
+  <meta property='og:description' content="Sorry, we couldn’t find the page you’re looking for.">
+  <!-- prettier-ignore -->
+  <meta name='twitter:description' content="Sorry, we couldn’t find the page you’re looking for.">
+
+<!-- Images -->
+  <meta property='og:image' content='https://www.sketch.com/images/metadata/pages/404.jpg'>
+  <meta name='twitter:card' content='summary_large_image'>
+
+<!-- Canonical URLs -->
+
+<link rel='canonical' href='https://www.sketch.com/404.html'>
+<meta property='og:url' content='https://www.sketch.com/404.html'>
+
+<!-- Non page-specific metadata -->
+<meta property='og:type' content='website'>
+<meta property='og:locale' content='en_US'>
+<meta property='og:site_name' content='Sketch'>
+<meta name='twitter:site' content='@sketch'>
+<link rel='alternate' type='application/atom+xml' title='RSS Feed for the Sketch Blog' href='/blog/feed.xml'>
+
+<!-- Icons -->
+<link rel='icon' type='image/svg+xml' href='/images/metadata/icon-16.svg'>
+<link rel='icon' type='image/png' sizes='16x16' href='/images/metadata/icon-16.png'>
+<link rel='icon' type='image/png' sizes='32x32' href='/images/metadata/icon-32.png'>
+<link rel='icon' type='image/png' sizes='96x96' href='/images/metadata/icon-96.png'>
+<link rel='apple-touch-icon-precomposed' type='image/png' sizes='152x152' href='/images/metadata/icon-152.png'>
+<link rel='apple-touch-icon-precomposed' type='image/png' sizes='167x167' href='/images/metadata/icon-167.png'>
+<link rel='apple-touch-icon-precomposed' type='image/png' sizes='180x180' href='/images/metadata/icon-180.png'>
+
+
+    <script defer src="/js/globals.5a70a9e822acf434aa6f.js"></script>
+
+    <!-- prettier-ignore -->
+<link href="/css/styles.prism.3d77f55c8c.css" rel="stylesheet preload" as="style" />
+
+<!-- prettier-ignore -->
+<link href="/css/404.2902b6d16b.css" rel="stylesheet preload" as="style" />
+
+
+
+
+  
+
+
+<script>
+  window.SENTRY_RELEASE_NAME = 'production_20250410-1706_nI1ED9JuVJBO'
+</script>
+<script defer src="/js/sentry.65ce1aa112824ddc9834.js"></script>
+
+
+
+<script type="module">
+  import { setConfig } from "https://esm.run/@maveio/components"
+
+  if (window.location.pathname.startsWith("/app/")) {
+    setConfig({
+      metrics: { enabled: false },
+    })
+  }
+</script>
+
+<script defer src="/js/script.f705e0c953cb00b3dd37.js"></script>
+
+
+
+
+
+  <script defer src="/js/simple-analytics.1204a707437bb21007ec.js"></script>
+
+
+
+<link rel="preload" href="/webfonts/marfa/ABCMarfa-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/webfonts/marfa/ABCMarfaMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/webfonts/custom/caveat/Caveat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/webfonts/custom/caveat/Caveat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" as="image" href="/images/backgrounds/stripe@2x.png">
+<link rel="preload" as="image" href="/images/backgrounds/default-product@2x.png">
+<link rel="preload" as="image" href="/images/backgrounds/design@2x.png">
+<link rel="preload" as="image" href="/images/backgrounds/collaboration@2x.png">
+<link rel="preload" as="image" href="/images/backgrounds/prototyping@2x.png">
+<link rel="preload" as="image" href="/images/backgrounds/developer-handoff@2x.png">
+<link rel="preload" as="image" href="/images/backgrounds/extensions@2x.png">
+<link rel="preload" as="image" href="/images/backgrounds/default-explore@2x.png">
+<link rel="preload" as="image" href="/images/backgrounds/blog@2x.png">
+<link rel="preload" as="image" href="/images/backgrounds/guides-courses@2x.png">
+<link rel="preload" as="image" href="/images/backgrounds/documentation@2x.png">
+<link rel="preload" as="image" href="/images/backgrounds/free-for-education@2x.png">
+
+
+    
+
+    
+  </head>
+  <body
+    class="is-loading  page page-404"
+    data-controller="referral"
+    data-referral-iphone-class="is-referral-iphone"
+  >
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+
+<a href="#content" class="main-nav-skip"> Skip Navigation </a>
+
+
+
+<header
+  class="
+    main-nav main-nav--blurred
+    
+  "
+  data-controller="main-nav"
+  data-action="resize@window->main-nav#resized keydown@document->main-nav#keyPressed storage@window->main-nav#checkLoginState scroll@window->main-nav#scrolled"
+  data-scrollable-target="sticky"
+  data-main-nav-target="mainNav"
+>
+  <nav class="main-nav__inner"><div class="main-nav__bar">
+      <div class="main-nav__controls" data-main-nav-target="navToggle">
+        <button
+          data-action="main-nav#toggleNav"
+          aria-expanded="false"
+          class="main-nav__toggle"
+          id="main-nav-toggle"
+          title="Toggle Menu"
+          aria-controls="main-nav-menu"
+        >
+          <!-- CSS Icon -->
+          <span class="main-nav__toggle__icon">
+            <span class="main-nav__toggle__icon__line main-nav__toggle__icon__line--top"></span>
+            <span class="main-nav__toggle__icon__line main-nav__toggle__icon__line--bottom"></span>
+          </span>
+          <span class="visuallyhidden">Menu</span>
+        </button>
+      </div>
+
+      
+        <div class="main-nav__logo">
+          <a class="main-nav__logo__link" href="/home/" title="Go to Homepage">
+            <span class="main-nav__logo__shape"></span>
+            <span class="main-nav__logo__name">Sketch</span>
+          </a>
+        </div>
+      
+
+      <div class="main-nav__persistent">
+        <div class="main-nav__persistent__profile is-hidden" data-main-nav-target="authProfile"></div>
+        <ul class="main-nav__persistent__actions">
+            <li
+              class="
+                main-nav__item
+                
+              "
+              data-main-nav-target=" hideOnLogin "
+            >
+              <a
+                href="/signin/"
+                class="main-nav__link main-nav__link--action"
+                
+              >Sign In</a>
+            </li>
+          
+        </ul>
+      </div>
+    </div><div class="main-nav__menu" id="main-nav-menu" id="main-nav-menu" aria-labelledby="main-nav-toggle">
+        <ul class="main-nav__menu__pages"><li class="main-nav__item main-nav__subnav">
+                <span class="main-nav__link main-nav__subnav__toggle">
+                  Product
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="main-nav__link__icon"><path fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m4 6 4 4 4-4"></path></svg>
+
+                </span>
+                <ul
+                  
+                  
+                  class="main-nav__subnav__dropdown main-nav__subnav__mega-menu main-nav__subnav__mega-menu--product"
+                >
+                  <ul class="main-nav__subnav__column main-nav__subnav__column--color">
+                    
+<li
+                          class="main-nav__subnav__item"
+                          data-action="
+                            mouseover->main-nav#addBackground
+                            mouseout->main-nav#removeBackground
+                          "
+                        >
+                          <a
+                            href="/design/"
+                            data-background="design"
+                            
+
+                            class="
+                              main-nav__subnav__link
+                              
+                            "
+
+                            
+                          >
+                            Design
+</a>
+                        </li><li
+                          class="main-nav__subnav__item"
+                          data-action="
+                            mouseover->main-nav#addBackground
+                            mouseout->main-nav#removeBackground
+                          "
+                        >
+                          <a
+                            href="/collaborate/"
+                            data-background="collaboration"
+                            
+
+                            class="
+                              main-nav__subnav__link
+                              
+                            "
+
+                            
+                          >
+                            Collaboration
+</a>
+                        </li><li
+                          class="main-nav__subnav__item"
+                          data-action="
+                            mouseover->main-nav#addBackground
+                            mouseout->main-nav#removeBackground
+                          "
+                        >
+                          <a
+                            href="/prototype/"
+                            data-background="prototyping"
+                            
+
+                            class="
+                              main-nav__subnav__link
+                              
+                            "
+
+                            
+                          >
+                            Prototyping
+</a>
+                        </li><li
+                          class="main-nav__subnav__item"
+                          data-action="
+                            mouseover->main-nav#addBackground
+                            mouseout->main-nav#removeBackground
+                          "
+                        >
+                          <a
+                            href="/handoff/"
+                            data-background="developer-handoff"
+                            
+
+                            class="
+                              main-nav__subnav__link
+                              
+                            "
+
+                            
+                          >
+                            Developer Handoff
+</a>
+                        </li><li
+                          class="main-nav__subnav__item"
+                          data-action="
+                            mouseover->main-nav#addBackground
+                            mouseout->main-nav#removeBackground
+                          "
+                        >
+                          <a
+                            href="/features/"
+                            data-background="all-features"
+                            
+
+                            class="
+                              main-nav__subnav__link
+                              
+                            "
+
+                            
+                          >
+                            All Features
+</a>
+                        </li></ul>
+
+                  
+
+                  
+                    <ul class="main-nav__subnav__column main-nav__subnav__column--updates">
+                      
+                      <div class="main-nav__subnav__mega-menu__updates-wrapper">
+  <div class="main-nav__subnav__column__title">What’s New</div>
+
+  <ul class="main-nav__subnav__mega-menu__updates">
+    
+      <li class="main-nav__subnav__mega-menu--content"><a
+          href="/updates/#sketch-in-2024"
+          data-action="main-nav#mobileToggleNav"
+          class="main-nav__subnav__mega-menu--whats-new-item"
+        >
+          <span class="main-nav__subnav__mega-menu--whats-new-title">
+            Sketch in 2024
+          </span>
+        </a>
+      </li>
+    
+      <li class="main-nav__subnav__mega-menu--content"><a
+          href="/updates/#smart-animate"
+          data-action="main-nav#mobileToggleNav"
+          class="main-nav__subnav__mega-menu--whats-new-item"
+        >
+          <span class="main-nav__subnav__mega-menu--whats-new-title">
+            Smart Animate
+          </span>
+        </a>
+      </li>
+    
+      <li class="main-nav__subnav__mega-menu--content"><a
+          href="/updates/#easy-library-swaps"
+          data-action="main-nav#mobileToggleNav"
+          class="main-nav__subnav__mega-menu--whats-new-item"
+        >
+          <span class="main-nav__subnav__mega-menu--whats-new-title">
+            Easy Library swaps
+          </span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div class="main-nav__subnav__mega-menu--link-wrapper">
+  <a
+    href="/updates/"
+    class="main-nav__subnav__mega-menu--link"
+  >
+    See all updates
+  </a>
+</div>
+
+                    </ul>
+                  
+                </ul>
+              </li>
+            
+<li class="main-nav__item main-nav__subnav">
+                <span class="main-nav__link main-nav__subnav__toggle">
+                  Explore
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="main-nav__link__icon"><path fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m4 6 4 4 4-4"></path></svg>
+
+                </span>
+                <ul
+                  
+                  
+                  class="main-nav__subnav__dropdown main-nav__subnav__mega-menu main-nav__subnav__mega-menu--explore"
+                >
+                  <ul class="main-nav__subnav__column main-nav__subnav__column--color">
+                    
+<li
+                          class="main-nav__subnav__item"
+                          data-action="
+                            mouseover->main-nav#addBackground
+                            mouseout->main-nav#removeBackground
+                          "
+                        >
+                          <a
+                            href="/blog/"
+                            data-background="blog"
+                            
+
+                            class="
+                              main-nav__subnav__link
+                              
+                            "
+
+                            
+                          >
+                            Blog
+</a>
+                        </li><li
+                          class="main-nav__subnav__item"
+                          data-action="
+                            mouseover->main-nav#addBackground
+                            mouseout->main-nav#removeBackground
+                          "
+                        >
+                          <a
+                            href="/design-resources/"
+                            data-background="design-resources"
+                            
+
+                            class="
+                              main-nav__subnav__link
+                              
+                            "
+
+                            
+                          >
+                            Design Resources
+</a>
+                        </li><li
+                          class="main-nav__subnav__item"
+                          data-action="
+                            mouseover->main-nav#addBackground
+                            mouseout->main-nav#removeBackground
+                          "
+                        >
+                          <a
+                            href="/extensions/"
+                            data-background="extensions-plugins"
+                            
+
+                            class="
+                              main-nav__subnav__link
+                              
+                            "
+
+                            
+                          >
+                            Extensions & Plugins
+</a>
+                        </li></ul>
+
+                  
+                    <ul class="main-nav__subnav__column">
+                      
+                        <li>
+                          <div class="main-nav__subnav__column__title">
+                            Courses
+                          </div>
+                        </li>
+                      
+<li class="main-nav__subnav__item">
+                            <a
+                              href="/courses/sketch-101/"
+                              
+
+                              class="
+                                main-nav__subnav__link
+                                
+                              "
+
+                              
+                            >
+                              Sketch 101
+</a>
+                          </li><li class="main-nav__subnav__item">
+                            <a
+                              href="/courses/sketch-102/"
+                              
+
+                              class="
+                                main-nav__subnav__link
+                                
+                              "
+
+                              
+                            >
+                              Sketch 102
+</a>
+                          </li></ul>
+                  
+
+                  
+                </ul>
+              </li>
+            
+<li class="main-nav__item">
+                  <a
+                    href="/pricing/"
+                    class="main-nav__link"
+                    
+                  >Pricing</a>
+                </li>
+<li class="main-nav__item main-nav__subnav">
+                <span class="main-nav__link main-nav__subnav__toggle">
+                  Support
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="main-nav__link__icon"><path fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m4 6 4 4 4-4"></path></svg>
+
+                </span>
+                <ul
+                  
+                  
+                  class="main-nav__subnav__dropdown"
+                >
+                  <ul class="main-nav__subnav__column ">
+                    
+<li
+                          class="main-nav__subnav__item"
+                          data-action="
+                            mouseover->main-nav#addBackground
+                            mouseout->main-nav#removeBackground
+                          "
+                        >
+                          <a
+                            href="/support/"
+                            data-background="help-center"
+                            
+
+                            class="
+                              main-nav__subnav__link
+                              
+                            "
+
+                            
+                          >
+                            Help Center
+</a>
+                        </li><li
+                          class="main-nav__subnav__item"
+                          data-action="
+                            mouseover->main-nav#addBackground
+                            mouseout->main-nav#removeBackground
+                          "
+                        >
+                          <a
+                            href="/docs/"
+                            data-background="documentation"
+                            
+
+                            class="
+                              main-nav__subnav__link
+                              
+                            "
+
+                            
+                          >
+                            Documentation
+</a>
+                        </li><li
+                          class="main-nav__subnav__item"
+                          data-action="
+                            mouseover->main-nav#addBackground
+                            mouseout->main-nav#removeBackground
+                          "
+                        >
+                          <a
+                            href="/support/contact/"
+                            data-background="contact-us"
+                            
+
+                            class="
+                              main-nav__subnav__link
+                              
+                            "
+
+                            
+                          >
+                            Contact Us
+</a>
+                        </li><li
+                          class="main-nav__subnav__item"
+                          data-action="
+                            mouseover->main-nav#addBackground
+                            mouseout->main-nav#removeBackground
+                          "
+                        >
+                          <a
+                            href="https://forum.sketch.com"
+                            data-background="community-forum"
+                            
+
+                            class="
+                              main-nav__subnav__link
+                              
+                            "
+
+                            
+                              target="_blank"
+                            
+                          >
+                            Community Forum
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="currentcolor" class="main-nav__item__action main-nav__item__action--icon">
+  <path d="M10.5 8H16v5.5M16 8l-7.5 7.5" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+
+</a>
+                        </li></ul>
+
+                  
+
+                  
+                </ul>
+              </li>
+            
+</ul>
+      
+<div class="main-nav__menu__auth">
+        <div class="main-nav__menu__auth__profile is-hidden" data-main-nav-target="authProfile"></div>
+        <ul class="main-nav__menu__auth__actions">
+          
+            <li
+              class="
+                main-nav__item
+                
+                main-nav__item--persistent
+                
+              "
+              data-main-nav-target=" hideOnLogin "
+            >
+              <a
+                
+                  href="/signin/"
+                
+
+                class="
+                  main-nav__link main-nav__link--action
+                  
+                "
+                
+              >
+                <span class="main-nav__link__label" data-main-nav-target="loggedOffLabel">
+                  
+Sign In
+                </span>
+
+                
+
+                
+              </a>
+            </li>
+          
+            <li
+              class="
+                main-nav__item
+                main-nav__item--cta
+                
+                 main-nav__item--download 
+              "
+              data-main-nav-target=" keepOnLogin "
+            >
+              <a
+                
+                  href="/downloads/mac/"
+                
+
+                class="
+                  button button--primary
+
+                     button--has-icon 
+
+                "
+                
+              >
+                <span class="main-nav__link__label" data-main-nav-target="loggedOffLabel">
+                  
+Get started
+                </span>
+
+                
+                  <span
+                    class="main-nav__link__label is-hidden"
+                    data-main-nav-target="loggedInLabel"
+                  >Download</span>
+                
+
+                
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="main-nav__link__icon"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m16 11-4 4-4-4M12 13.5v-9M4 20h16"></path></g></svg>
+
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div
+  class="mobile-nav"
+  data-main-nav-target="mobileNav"
+  data-action="scroll->main-nav#mobileNavScrolled mobile-nav-focus@window->main-nav#focusTrapActive"
+>
+  <div class="mobile-nav__wrapper">
+    <div class="mobile-nav__actions">
+      <div class="mobile-nav__nav-toggle">
+        <button class="mobile-nav__close" data-action="main-nav#toggleNav">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="mobile-nav__close-icon">
+  <title>icon-close</title>
+  <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Assets-/-Icons-/-Close" fill="#858585">
+      <path d="M7.05025253,5.63603897 L11.9991458,10.5851458 L16.9497475,5.63603897 C17.3402718,5.24551468 17.9734367,5.24551468 18.363961,5.63603897 C18.7544853,6.02656326 18.7544853,6.65972824 18.363961,7.05025253 L13.4141458,11.9991458 L18.363961,16.9497475 C18.7544853,17.3402718 18.7544853,17.9734367 18.363961,18.363961 C17.9734367,18.7544853 17.3402718,18.7544853 16.9497475,18.363961 L11.9991458,13.4141458 L7.05025253,18.363961 C6.65972824,18.7544853 6.02656326,18.7544853 5.63603897,18.363961 C5.24551468,17.9734367 5.24551468,17.3402718 5.63603897,16.9497475 L10.5851458,11.9991458 L5.63603897,7.05025253 C5.24551468,6.65972824 5.24551468,6.02656326 5.63603897,5.63603897 C6.02656326,5.24551468 6.65972824,5.24551468 7.05025253,5.63603897 Z" id="Shape"></path>
+    </g>
+  </g>
+</svg>
+
+        </button>
+      </div>
+      
+        
+          <div class="mobile-nav__sign-up">
+            <div class="mobile-nav__menu__auth__profile is-hidden" data-main-nav-target="authProfile"></div>
+            <a
+              href="/signin/"
+              class="mobile-nav__link mobile-nav__link--action"
+              data-main-nav-target=" hideOnLogin "
+              data-action="main-nav#mobileToggleNav"
+              
+            >
+              Sign In
+            </a>
+          </div>
+        
+      
+        
+      
+    </div>
+    <div class="mobile-nav__links">
+      <ul class="main-nav__menu__pages"><li class="main-nav__item-group">
+              <ul>
+                <li class="main-nav__item main-nav__heading">
+                  Product
+                </li>
+                
+
+                
+                
+<li class="main-nav__subnav__item">
+                      <a
+                        href="/updates/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        What’s New
+</a>
+                    </li><li class="main-nav__subnav__item">
+                      <a
+                        href="/design/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        Design
+</a>
+                    </li><li class="main-nav__subnav__item">
+                      <a
+                        href="/collaborate/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        Collaboration
+</a>
+                    </li><li class="main-nav__subnav__item">
+                      <a
+                        href="/prototype/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        Prototyping
+</a>
+                    </li><li class="main-nav__subnav__item">
+                      <a
+                        href="/handoff/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        Developer Handoff
+</a>
+                    </li><li class="main-nav__subnav__item">
+                      <a
+                        href="/features/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        All Features
+</a>
+                    </li><li class="main-nav__subnav__item">
+                      <a
+                        href="/pricing/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        Pricing
+</a>
+                    </li></ul>
+            </li>
+          
+<li class="main-nav__item-group">
+              <ul>
+                <li class="main-nav__item main-nav__heading">
+                  Explore
+                </li>
+                
+
+                
+                
+<li class="main-nav__subnav__item">
+                      <a
+                        href="/blog/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        Blog
+</a>
+                    </li><li class="main-nav__subnav__item">
+                      <a
+                        href="/design-resources/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        Design Resources
+</a>
+                    </li><li class="main-nav__subnav__item">
+                      <a
+                        href="/courses/sketch-101/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        Sketch 101
+</a>
+                    </li><li class="main-nav__subnav__item">
+                      <a
+                        href="/courses/sketch-102/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        Sketch 102
+</a>
+                    </li><li class="main-nav__subnav__item">
+                      <a
+                        href="/extensions/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        Extensions & Plugins
+</a>
+                    </li></ul>
+            </li>
+          
+
+<li class="main-nav__item-group">
+              <ul>
+                <li class="main-nav__item main-nav__heading">
+                  Support
+                </li>
+                
+
+                
+                
+<li class="main-nav__subnav__item">
+                      <a
+                        href="/support/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        Help Center
+</a>
+                    </li><li class="main-nav__subnav__item">
+                      <a
+                        href="/docs/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        Documentation
+</a>
+                    </li><li class="main-nav__subnav__item">
+                      <a
+                        href="/support/contact/"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                      >
+                        Contact Us
+</a>
+                    </li><li class="main-nav__subnav__item">
+                      <a
+                        href="https://forum.sketch.com"
+                        data-action="main-nav#mobileToggleNav"
+                        class="
+                          main-nav__subnav__link
+                          "
+                        
+                          target="_blank"
+                        
+                      >
+                        Community Forum
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="currentcolor" class="main-nav__item__action main-nav__item__action--icon">
+  <path d="M10.5 8H16v5.5M16 8l-7.5 7.5" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+
+</a>
+                    </li></ul>
+            </li>
+          
+
+          <li class="main-nav__item-group extra-surprises">
+            <ul>
+              <li class="main-nav__item main-nav__heading main-nav__heading--icon">
+                Extra Surprises <span class="icon">🎁</span>
+              </li>
+
+              
+                <li class="main-nav__subnav__item">
+                  <a
+                    href="#"
+                    class="main-nav__subnav__link toggle-grid-layout-link"
+                    data-action="main-nav#toggleGridLayout"
+                  >
+                    Layout overlay
+
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+    
+
+    <main id="content">
+  <main class="hero">
+  <div class="hero__background"></div>
+
+  <div class="pad-viewport">
+    <div class="wrapper">
+      <div class="grid-404">
+        <div class="grid__item">
+          <div class="hero__text">
+            <h1 class="hero__heading">This page has been abducted.</h1>
+            <p class="hero__lead">Choose your path below. The truth is out there…</p>
+
+            <div class="hero__buttons">
+              
+                <a href="/" class="button button--primary">Home</a>
+              
+                <a href="/support/" class="button button--secondary">Get Support</a>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item ufo">
+          <img src="https://cdn.sketch.com/assets/pages/error/ufo@2x.png" alt="UFO" class="ufo__disc">
+          <img src="https://cdn.sketch.com/assets/pages/error/ufo-beam@2x.png" alt="UFO beam" class="ufo__beam">
+          <img
+            src="https://cdn.sketch.com/assets/pages/error/ufo-cursor@2x.png"
+            alt="Levitating mouse cursor"
+            class="ufo__cursor"
+          >
+          <img
+            src="https://cdn.sketch.com/assets/pages/error/ufo-cursor-shadow@2x.png"
+            alt="Cursor shadow"
+            class="ufo__cursor-shadow"
+          >
+        </div>
+      </div>
+      <div class="cards">
+        
+          <div
+  class="
+    icon-text-card icon-text-card--white-bg
+    
+  "
+  
+>
+  
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="icon-text-card__icon" fill="currentcolor"><path d="M2.025 9.429 6.32 3.674a.129.129 0 0 1 .088-.05L11.986 3a.129.129 0 0 1 .028 0l5.577.622a.129.129 0 0 1 .088.051l4.296 5.755a.129.129 0 0 1-.006.161l-9.872 11.365a.129.129 0 0 1-.194 0L2.03 9.59a.129.129 0 0 1-.006-.161Zm11.108-5.193 3.943 3.78a.129.129 0 0 0 .217-.092V4.826a.088.088 0 0 1 .174-.023l.984 3.644a.129.129 0 0 0 .088.09l2.289.677a.088.088 0 0 1-.025.173h-2.188a.257.257 0 0 0-.22.124l-5.542 9.2a.088.088 0 0 1-.156-.083l4.132-8.875a.257.257 0 0 0-.233-.366H7.402a.257.257 0 0 0-.233.366l4.132 8.875a.088.088 0 0 1-.156.083l-5.542-9.2a.257.257 0 0 0-.22-.124H3.195a.088.088 0 0 1-.025-.173l2.29-.678a.129.129 0 0 0 .087-.09l.984-3.643a.088.088 0 0 1 .174.023v3.098a.129.129 0 0 0 .217.093l3.944-3.78a.088.088 0 0 1 .13.118L8.05 8.016a.129.129 0 0 0 .1.21h7.698a.129.129 0 0 0 .1-.21l-2.944-3.66a.088.088 0 0 1 .13-.12Z" fill="#000" fill-rule="evenodd"></path></svg>
+
+  
+
+  
+
+  
+    <div class="icon-text-card__text">
+      
+      
+
+      <p>Create with our award-winning Mac app, share projects in the browser, and keep an eye on them with your iPhone. <a href="/apps/">See our apps</a></p>
+
+    </div>
+  
+</div>
+
+        
+          <div
+  class="
+    icon-text-card icon-text-card--white-bg
+    
+  "
+  
+>
+  
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="icon-text-card__icon" fill="currentcolor"><g fill="#000" fill-rule="evenodd"><path fill-opacity=".15" stroke="#000" stroke-width="1.5" d="M18.795 4.75c.902 0 1.24.067 1.572.245.275.147.49.363.638.638.178.332.245.67.245 1.572v9.59c0 .902-.067 1.24-.245 1.572-.147.275-.363.49-.638.638-.332.178-.67.245-1.572.245H5.205c-.902 0-1.24-.067-1.572-.245a1.532 1.532 0 0 1-.638-.638c-.178-.332-.245-.67-.245-1.572v-9.59c0-.902.067-1.24.245-1.572.147-.275.363-.49.638-.638.332-.178.67-.245 1.572-.245Z"></path><rect width="6" height="1.5" x="5" y="11" rx=".75"></rect><rect width="4" height="1.5" x="5" y="8" rx=".75"></rect><path d="M21 7.907V11h-2.978a.152.152 0 0 1-.048-.007l-.043-.023a.152.152 0 0 1-.054-.17l.023-.042 1.649-1.972a.076.076 0 0 0-.076-.12l-.036.018-2.536 2.274a.152.152 0 0 1-.252-.09v-.048l.227-1.371a.076.076 0 0 0-.125-.07l-.019.024-.858 1.73a.38.38 0 0 1-.1.126l-.07.045-1.121.565a.076.076 0 0 0 .004.138l.03.006h1c.1 0 .196.04.266.11l.048.056 3.45 5.06a.076.076 0 0 0 .138-.048l-.008-.029-2.39-4.82a.228.228 0 0 1 .145-.32l.06-.009H21v5.766l-.829.941a.228.228 0 0 1-.322.02l-.02-.02-5.754-6.528a.304.304 0 0 1-.022-.374L16.5 8.293a.304.304 0 0 1 .216-.129l3.25-.364h.068l.966.107Z"></path></g></svg>
+
+  
+
+  
+
+  
+    <div class="icon-text-card__text">
+      
+      
+
+      <p>Solo, agency or team? We’ve got you. Your first 30 days are free — no credit card required. <a href="/pricing/">See all pricing plans</a></p>
+
+    </div>
+  
+</div>
+
+        
+          <div
+  class="
+    icon-text-card icon-text-card--white-bg
+    
+  "
+  
+>
+  
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="icon-text-card__icon" fill="currentcolor"><g fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"><rect width="5.5" height="5.5" x="4.75" y="4.75" rx="1.5"></rect><rect width="5.5" height="5.5" x="13.75" y="4.75" rx="1.5"></rect><rect width="5.5" height="5.5" x="4.75" y="13.75" rx="1.5"></rect><rect width="5.5" height="5.5" x="13.75" y="13.75" rx="1.5"></rect></g></svg>
+
+  
+
+  
+
+  
+    <div class="icon-text-card__text">
+      
+      
+
+      <p>Looking for a list of everything you can do with Sketch? Look no further, see what features Sketch <a href="/features/">has to offer</a></p>
+
+    </div>
+  
+</div>
+
+        
+      </div><section class="blog-section" id="blog">
+        <div class="wrapper">
+          
+
+<div class="blog-latest pad-viewport">
+  <div class="blog-latest__content wrapper">
+    <header class="blog-latest__header">
+      <p class="blog-latest__label">
+        <span class="pill-prism">
+  News
+</span>
+
+      </p>
+      <h2 class="blog-latest__heading">Our blog</h2>
+      <p class="blog-latest__blurb">The latest news, greatest tutorials and inspiration that’ll make you say “I wish I’d done that!” From incredible things you can make with Sketch, to insights from the people who make Sketch happen.</p>
+      <ul class="blog-latest__actions">
+        
+          <li class="blog-latest__action-item">
+            <a href="/blog/" class="blog-latest__action">Take a look</a>
+          </li>
+        
+      </ul>
+    </header>
+
+    <ul class="blog-latest__posts">
+      
+        
+        
+
+
+        
+
+        <li class="blog-latest__post-item">
+          <a
+  href="/blog/sketch-in-2024/"
+  class="thumbnail-title-link"
+  
+  data-controller="thumbnail-title-link"
+  data-thumbnail-title-link-target="link"
+  data-action="resize@window->thumbnail-title-link#updateClass"
+>
+  <figure>
+    <img
+      class="thumbnail-title-link__image"
+      loading="lazy"
+      src="https://sketch-cdn.imgix.net/assets/blog/2024-12/sketch-in-2024%402x.jpg?ixlib=rb-4.1.0&fit=crop&dpr=2&w=64&h=64&q=95&fm=png&auto=format&s=10bbfe4e83cebf801a54ebef30cef086"
+      srcset="https://sketch-cdn.imgix.net/assets/blog/2024-12/sketch-in-2024%402x.jpg?ixlib=rb-4.1.0&fit=crop&dpr=1&w=64&h=64&q=95&fm=png&auto=format&s=2efea3e2811a05985d055462f77519cf 1x, https://sketch-cdn.imgix.net/assets/blog/2024-12/sketch-in-2024%402x.jpg?ixlib=rb-4.1.0&fit=crop&dpr=2&w=64&h=64&q=95&fm=png&auto=format&s=10bbfe4e83cebf801a54ebef30cef086 2x"
+      alt="An animation showing a carrousel of features shipped in 2024."
+      width="64"
+      height="64"
+    >
+  </figure>
+  <h3 class="thumbnail-title-link__heading" data-thumbnail-title-link-target="title"><strong>What’s new:</strong> Everything we shipped at Sketch in 2024 — and what’s next</h3>
+</a>
+
+        </li>
+      
+        
+        
+
+
+        
+
+        <li class="blog-latest__post-item">
+          <a
+  href="/blog/tinted-app-icons/"
+  class="thumbnail-title-link"
+  
+  data-controller="thumbnail-title-link"
+  data-thumbnail-title-link-target="link"
+  data-action="resize@window->thumbnail-title-link#updateClass"
+>
+  <figure>
+    <img
+      class="thumbnail-title-link__image"
+      loading="lazy"
+      src="https://sketch-cdn.imgix.net/assets/blog/2024-11/tinted-app-icons-header.png?ixlib=rb-4.1.0&fit=crop&dpr=2&w=64&h=64&q=95&fm=png&auto=format&s=77ec700236ec07bbfd165cab905a156a"
+      srcset="https://sketch-cdn.imgix.net/assets/blog/2024-11/tinted-app-icons-header.png?ixlib=rb-4.1.0&fit=crop&dpr=1&w=64&h=64&q=95&fm=png&auto=format&s=e3224f109c754527bd0bf478426f1daa 1x, https://sketch-cdn.imgix.net/assets/blog/2024-11/tinted-app-icons-header.png?ixlib=rb-4.1.0&fit=crop&dpr=2&w=64&h=64&q=95&fm=png&auto=format&s=77ec700236ec07bbfd165cab905a156a 2x"
+      alt="Four tinted iOS app icons sit in the dock at the bottom of an iPhone, the letters on the icons spell out the words oh no"
+      width="64"
+      height="64"
+    >
+  </figure>
+  <h3 class="thumbnail-title-link__heading" data-thumbnail-title-link-target="title"><strong>Learn design:</strong> Oh no, I need to design a tinted iOS 18 app icon — how to do it right</h3>
+</a>
+
+        </li>
+      
+        
+        
+
+
+        
+
+        <li class="blog-latest__post-item">
+          <a
+  href="/blog/an-in-depth-look-at-prototyping-in-sketch/"
+  class="thumbnail-title-link"
+  
+  data-controller="thumbnail-title-link"
+  data-thumbnail-title-link-target="link"
+  data-action="resize@window->thumbnail-title-link#updateClass"
+>
+  <figure>
+    <img
+      class="thumbnail-title-link__image"
+      loading="lazy"
+      src="https://sketch-cdn.imgix.net/assets/blog/2024-04-header-prototyping.png?ixlib=rb-4.1.0&fit=crop&dpr=2&w=64&h=64&q=95&fm=png&auto=format&s=888f452c49f7638cfc7de4087d26a52f"
+      srcset="https://sketch-cdn.imgix.net/assets/blog/2024-04-header-prototyping.png?ixlib=rb-4.1.0&fit=crop&dpr=1&w=64&h=64&q=95&fm=png&auto=format&s=351b816160cc86f61d39e287001e7478 1x, https://sketch-cdn.imgix.net/assets/blog/2024-04-header-prototyping.png?ixlib=rb-4.1.0&fit=crop&dpr=2&w=64&h=64&q=95&fm=png&auto=format&s=888f452c49f7638cfc7de4087d26a52f 2x"
+      alt=""
+      width="64"
+      height="64"
+    >
+  </figure>
+  <h3 class="thumbnail-title-link__heading" data-thumbnail-title-link-target="title"><strong>Prototyping in Sketch:</strong> Everything you need to know</h3>
+</a>
+
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+
+</main>
+
+
+    
+
+<footer class="main-footer main-footer--no-margin" id="footer" role="contentinfo">
+  <div class="main-footer__footer pad-viewport">
+    <div class="wrapper"><section class="main-footer__content"><nav class="main-footer__nav">
+            
+              
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Product
+    
+  </h3>
+  <ul class="main-footer__nav__items"><li><a
+            class="main-footer__nav__item main-footer__nav__item--what-s-new"
+            href="/updates/"
+            
+>What’s New
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--design"
+            href="/design/"
+            
+>Design
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--collaboration"
+            href="/collaborate/"
+            
+>Collaboration
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--prototyping"
+            href="/prototype/"
+            
+>Prototyping
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--developer-handoff"
+            href="/handoff/"
+            
+>Developer Handoff
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--all-features"
+            href="/features/"
+            
+>All Features
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--view-mirror-on-ios"
+            href="https://apps.apple.com/app/sketch-view-and-mirror/id1609224699"
+            
+target="_blank">View & Mirror on iOS
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="currentcolor" class="main-footer__nav__item__action main-footer__nav__item__action--icon">
+  <path d="M10.5 8H16v5.5M16 8l-7.5 7.5" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--beta"
+            href="/beta/"
+            
+>Beta
+</a></li></ul>
+</div>
+
+            
+              
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Explore
+    
+  </h3>
+  <ul class="main-footer__nav__items"><li><a
+            class="main-footer__nav__item main-footer__nav__item--design-resources"
+            href="/design-resources/"
+            
+>Design Resources
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--blog"
+            href="/blog/"
+            
+>Blog
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--extensions-plugins"
+            href="/extensions/"
+            
+>Extensions & Plugins
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--figma-to-sketch"
+            href="/vs/figma/"
+            
+>Figma to Sketch
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--pricing"
+            href="/pricing/"
+            
+>Pricing
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--roadmap"
+            href="/roadmap/"
+            
+>Roadmap
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--free-for-education"
+            href="/education/"
+            
+>Free for Education
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--newsletter"
+            href="/newsletter/"
+            
+>Newsletter
+</a></li></ul>
+</div>
+
+            
+              
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Support
+    
+  </h3>
+  <ul class="main-footer__nav__items"><li><a
+            class="main-footer__nav__item main-footer__nav__item--help-center"
+            href="/support/"
+            
+>Help Center
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--documentation"
+            href="/docs/"
+            
+>Documentation
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--community-forum"
+            href="https://forum.sketch.com"
+            
+target="_blank">Community Forum
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="currentcolor" class="main-footer__nav__item__action main-footer__nav__item__action--icon">
+  <path d="M10.5 8H16v5.5M16 8l-7.5 7.5" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--developer-platform"
+            href="https://developer.sketch.com"
+            
+target="_blank">Developer Platform
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="currentcolor" class="main-footer__nav__item__action main-footer__nav__item__action--icon">
+  <path d="M10.5 8H16v5.5M16 8l-7.5 7.5" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--service-status"
+            href="https://status.sketch.com"
+            
+target="_blank">Service Status
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="currentcolor" class="main-footer__nav__item__action main-footer__nav__item__action--icon">
+  <path d="M10.5 8H16v5.5M16 8l-7.5 7.5" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--manage-license"
+            href="/license/"
+            
+>Manage License
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--contact-us"
+            href="/support/contact/"
+            
+>Contact Us
+</a></li></ul>
+</div>
+
+            
+              
+<div class="main-footer__nav__group">
+  <h3 class="main-footer__nav__heading">
+    Company
+    
+  </h3>
+  <ul class="main-footer__nav__items"><li><a
+            class="main-footer__nav__item main-footer__nav__item--about-us"
+            href="/about-us/"
+            
+>About Us
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--careers"
+            href="/careers/"
+            
+>Careers
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--partners"
+            href="/partners/"
+            
+>Partners
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--security"
+            href="/security/"
+            
+>Security
+</a></li><li><a
+            class="main-footer__nav__item main-footer__nav__item--terms-policies"
+            href="/legal/"
+            
+>Terms & Policies
+</a></li></ul>
+</div>
+
+            
+          </nav><div class="main-footer__sketch">
+          <div class="main-footer__logo">
+            <a href="/home/" class="main-footer__logo__link"><span class="visuallyhidden">Home</span></a>
+          </div>
+          <p class="main-footer__notice">&copy; 2025 Sketch B.V.</p>
+          <ul class="main-footer__social">
+            
+              
+              <li class="main-footer__social__item">
+                <a
+                  href="https://x.com/sketch"
+                  class="main-footer__social__link main-footer__social__link--x"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Sketch X link"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentcolor" class="main-footer__social__icon"><path d="M12.117 8.622L18.446 1h-1.5l-5.495 6.618L7.062 1H2l6.637 10.007L2 19h1.5l5.803-6.989L13.938 19H19L12.117 8.622zm-2.054 2.474l-.672-.997-5.35-7.93h2.303l4.318 6.4.672.996 5.613 8.318h-2.304l-4.58-6.787z"></path></svg>
+
+                </a>
+              </li>
+            
+              
+              <li class="main-footer__social__item">
+                <a
+                  href="https://bsky.app/profile/sketch.com"
+                  class="main-footer__social__link main-footer__social__link--bluesky"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Sketch Bluesky link"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentcolor" class="main-footer__social__icon"><path d="M4.335 2.212C6.628 3.972 9.095 7.539 10 9.453c.906-1.914 3.372-5.482 5.665-7.241C17.319.942 20-.04 20 3.086c0 .624-.35 5.244-.556 5.994-.713 2.608-3.315 3.273-5.629 2.87 4.045.704 5.074 3.035 2.852 5.366-4.22 4.426-6.066-1.111-6.54-2.53-.086-.26-.126-.382-.127-.278 0-.104-.041.018-.128.278-.473 1.419-2.318 6.956-6.539 2.53-2.222-2.331-1.193-4.662 2.852-5.366-2.314.403-4.916-.262-5.63-2.87C.35 8.33 0 3.71 0 3.086 0-.04 2.68.942 4.335 2.212Z" fill-rule="nonzero"></path></svg>
+
+                </a>
+              </li>
+            
+              
+              <li class="main-footer__social__item">
+                <a
+                  href="https://www.instagram.com/madewithsketch/"
+                  class="main-footer__social__link main-footer__social__link--instagram"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Sketch Instagram link"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentcolor" class="main-footer__social__icon"><path d="M10 1c-2.445 0-2.75.011-3.71.054-.959.045-1.611.196-2.185.418A4.407 4.407 0 002.51 2.511c-.5.5-.809 1.002-1.037 1.594-.223.574-.375 1.226-.419 2.185C1.009 7.25 1 7.555 1 10c0 2.445.011 2.75.054 3.71.045.958.196 1.611.419 2.185a4.405 4.405 0 001.038 1.595c.5.499 1.002.809 1.594 1.038.575.222 1.227.374 2.185.418.96.045 1.265.054 3.71.054 2.445 0 2.75-.011 3.71-.054.958-.045 1.611-.197 2.185-.419a4.424 4.424 0 001.595-1.038c.499-.5.809-1 1.038-1.594.222-.574.374-1.227.418-2.185.045-.96.054-1.265.054-3.71 0-2.445-.011-2.75-.054-3.71-.045-.958-.197-1.612-.419-2.185A4.417 4.417 0 0017.49 2.51c-.5-.5-1-.809-1.594-1.037-.574-.223-1.227-.375-2.185-.419C12.75 1.009 12.445 1 10 1zm3.637 1.673c.878.041 1.354.187 1.67.311.422.163.72.358 1.037.672.315.315.51.615.672 1.036.123.317.27.793.31 1.67.043.95.052 1.235.052 3.638 0 2.403-.01 2.689-.055 3.637-.046.878-.192 1.354-.316 1.67-.168.422-.359.72-.674 1.037-.314.315-.618.51-1.035.672-.315.123-.799.27-1.676.31-.956.043-1.237.052-3.645.052s-2.689-.01-3.644-.055c-.878-.046-1.362-.192-1.677-.316a2.787 2.787 0 01-1.034-.674 2.733 2.733 0 01-.675-1.035c-.124-.315-.27-.799-.315-1.676-.034-.945-.046-1.237-.046-3.633 0-2.397.012-2.69.046-3.646.046-.878.191-1.36.315-1.676.157-.427.36-.72.675-1.035a2.662 2.662 0 011.034-.674c.315-.124.788-.27 1.666-.316.956-.033 1.237-.045 3.644-.045L10 2.62c2.402 0 2.689.012 3.637.053zM10 5.378a4.621 4.621 0 100 9.243 4.621 4.621 0 000-9.243zM10 13a3 3 0 110-6 3 3 0 110 6zm5.884-7.804a1.08 1.08 0 01-2.16 0 1.08 1.08 0 012.16 0z"></path></svg>
+
+                </a>
+              </li>
+            
+              
+              <li class="main-footer__social__item">
+                <a
+                  href="https://www.youtube.com/c/SketchDesign/"
+                  class="main-footer__social__link main-footer__social__link--youtube"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Sketch YouTube link"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" fill="currentcolor" class="main-footer__social__icon">
+  <path d="M19.582 5.162a2.509 2.509 0 00-1.74-1.744C16.282 3 10.009 3 10.009 3s-6.258-.008-7.833.418a2.509 2.509 0 00-1.74 1.744A26.147 26.147 0 000 10.009c-.005 1.62.141 3.236.436 4.828a2.509 2.509 0 001.74 1.744C3.733 17 10.01 17 10.01 17s6.257 0 7.833-.42a2.509 2.509 0 001.74-1.743c.289-1.593.428-3.21.417-4.828a26.131 26.131 0 00-.417-4.847zM8.007 13.007V7.001l5.221 3.008z" fill-rule="evenodd"></path>
+</svg>
+
+                </a>
+              </li>
+            
+              
+              <li class="main-footer__social__item">
+                <a
+                  href="https://mastodon.design/@Sketch"
+                  class="main-footer__social__link main-footer__social__link--mastodon"
+                  target="_blank"
+                  rel="me nofollow noopener noreferrer"
+                  aria-label="Sketch Mastodon link"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentcolor" class="main-footer__social__icon"><path d="M10.53 1c2.33.019 4.574.268 5.88.86 0 0 2.59 1.145 2.59 5.05v.296c-.003.787-.043 2.972-.36 4.586-.251 1.27-2.24 2.658-4.523 2.927-1.19.141-2.363.27-3.614.213a21.382 21.382 0 01-3.658-.482c0 .197.013.384.038.559.264 1.993 2 2.113 3.644 2.168 1.658.056 3.136-.404 3.136-.404l.068 1.482-.022.01c-.17.084-1.304.614-3.206.717-1.14.063-2.555-.028-4.203-.458-3.575-.935-4.19-4.7-4.284-8.517-.028-1.134-.01-2.203-.01-3.097 0-3.905 2.59-5.05 2.59-5.05 1.306-.592 3.547-.841 5.878-.86h.057zm2.635 3.05c-.971 0-1.706.37-2.191 1.106l-.474.783-.472-.783c-.486-.737-1.221-1.104-2.191-1.104-.84 0-1.515.29-2.03.859-.501.568-.75 1.336-.75 2.302v4.727h1.896V7.351c0-.966.412-1.458 1.237-1.458.91 0 1.368.583 1.368 1.734v2.512h1.885V7.628c0-1.152.457-1.734 1.369-1.734.824 0 1.236.49 1.236 1.457v4.59h1.897V7.212c0-.966-.25-1.734-.75-2.302-.516-.569-1.191-.86-2.03-.86z"></path></svg>
+
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+</footer>
+
+
+    
+
+    
+
+    
+      <div class="grid-layout" data-controller="grid-layout" data-action="grid-layout-toggle@window->grid-layout#toggleVisibility keydown@document->grid-layout#toggleVisibility resize@window->grid-layout#updateResolution">
+  <div class="pad-viewport grid-layout__pad">
+    <div class="wrapper grid-layout__wrapper">
+      <div class="grid-layout__col"></div>
+      <div class="grid-layout__col"></div>
+      <div class="grid-layout__col"></div>
+      <div class="grid-layout__col"></div>
+      <div class="grid-layout__col"></div>
+      <div class="grid-layout__col"></div>
+      <div class="grid-layout__col"></div>
+      <div class="grid-layout__col"></div>
+      <div class="grid-layout__col"></div>
+      <div class="grid-layout__col"></div>
+      <div class="grid-layout__col"></div>
+      <div class="grid-layout__col"></div>
+    </div>
+    <div class="wrapper grid-layout__guides">
+      <div class="grid-layout__guide"></div>
+      <div class="grid-layout__guide"></div>
+      <div class="grid-layout__guide"></div>
+      <div class="grid-layout__guide"></div>
+      <div class="grid-layout__guide"></div>
+      <div class="grid-layout__guide"></div>
+      <div class="grid-layout__guide"></div>
+      <div class="grid-layout__guide"></div>
+      <div class="grid-layout__guide"></div>
+    </div>
+  </div>
+  <div class="grid-layout__res" data-grid-layout-target="res"></div>
+</div>
+    
+
+    
+    
+<script>
+        function overwriter({ path }) {
+          if (path.startsWith('/home')) path = '/'
+          return path
+        }
+      </script>
+      <script
+        async
+        defer
+        data-hostname="sketch.com"
+        data-ignore-pages="/analytics/*"
+        data-non-unique-hostnames="sketchapp.com"
+        data-path-overwriter="overwriter"
+        src="https://scripts.simpleanalyticscdn.com/latest.js"
+      ></script>
+      <noscript
+        ><img
+          src="https://queue.simpleanalyticscdn.com/noscript.gif?hostname=sketch.com"
+          alt=""
+          referrerpolicy="no-referrer-when-downgrade"
+      ></noscript>
+    
+  </body>
+</html>
